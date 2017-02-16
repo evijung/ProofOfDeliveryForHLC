@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hitachi_tstv.yodpanom.yaowaluk.proofdelivery.DetailJob"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linTopDetail"
+        android:background="@color/layout_bg1"
+        android:padding="@dimen/mini_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:textSize="@dimen/h2"
+            android:textStyle="normal|bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin"
+            android:background="#64ffffff"
+            android:padding="@dimen/mini_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:textSize="@dimen/h3"
+                android:layout_margin="@dimen/mini_margin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:textSize="@dimen/h3"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                android:textSize="@dimen/h3"
+                android:layout_margin="@dimen/mini_margin" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button10"
+                    android:background="@android:drawable/ic_menu_call"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView18"
+                    android:textSize="@dimen/h3"
+                    android:layout_marginLeft="@dimen/mini_margin"
+                    android:layout_marginRight="@dimen/mini_margin"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linBelow"
+        android:layout_below="@+id/linTopDetail"
+        android:padding="@dimen/mini_margin"
+        android:background="@color/layout_bg2"
+        android:layout_marginTop="@dimen/mini_margin">
+
+        <TextView
+            android:text="@string/no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28"
+            android:layout_weight="1"
+            android:textSize="@dimen/h3" />
+
+        <TextView
+            android:text="@string/container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:layout_weight="3"
+            android:textSize="@dimen/h3" />
+
+        <TextView
+            android:text="@string/quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26"
+            android:layout_weight="1"
+            android:textSize="@dimen/h3" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/livContainer"
+        android:padding="@dimen/mini_margin"
+        android:background="@color/layout_bg2"
+        android:layout_below="@+id/linBelow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linBottomDetail" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linBottomDetail"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/picture_width"
+                android:layout_height="@dimen/picture_height"
+                app:srcCompat="@drawable/picture"
+                android:id="@+id/imageView6"
+                android:background="#cbc9c9"
+                android:layout_margin="@dimen/mini_margin"
+                android:padding="2dp" />
+
+            <ImageView
+                app:srcCompat="@drawable/picture"
+                android:background="#cbc9c9"
+                android:padding="2dp"
+                android:id="@+id/imageView5"
+                android:layout_width="57dp"
+                android:layout_height="@dimen/picture_height"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:layout_marginTop="@dimen/mini_margin" />
+
+            <ImageView
+                app:srcCompat="@drawable/picture"
+                android:id="@+id/imageView4"
+                android:layout_margin="@dimen/mini_margin"
+                android:background="#cbc9c9"
+                android:padding="2dp"
+                android:layout_width="@dimen/picture_width"
+                android:layout_height="@dimen/picture_height" />
+
+            <ImageView
+                app:srcCompat="@drawable/picture"
+                android:id="@+id/imageView3"
+                android:layout_margin="@dimen/mini_margin"
+                android:background="#cbc9c9"
+                android:padding="2dp"
+                android:layout_width="@dimen/picture_width"
+                android:layout_height="@dimen/picture_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_height="@dimen/button_height"
+                android:id="@+id/button8"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/mini_margin"
+                android:background="@drawable/sign" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:id="@+id/button4"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/mini_margin"
+                android:background="@drawable/saveimgth" />
+
+            <Button
+                android:layout_height="42dp"
+                android:id="@+id/button9"
+                android:background="@drawable/submit"
+                android:layout_margin="@dimen/mini_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!--LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:id="@+id/button5"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/start" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:id="@+id/button4"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/fin" />
+        </LinearLayout-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:id="@+id/button7"
+                android:layout_weight="1"
+                android:background="@drawable/here"
+                android:layout_margin="@dimen/mini_margin" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:id="@+id/button13"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/mini_margin"
+                android:background="@drawable/btnback" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
